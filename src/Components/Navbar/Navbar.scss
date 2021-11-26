@@ -1,0 +1,13 @@
+.navbar {
+	&__logo {
+	}
+	&__nav {
+		&__link {
+			text-decoration: none;
+		}
+	}
+}
+
+.active {
+	text-decoration: underline;
+}
