@@ -1,0 +1,16 @@
+.herobanner {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img.png");
+	background-position: center;
+	background-size: cover;
+	border-collapse: separate;
+	border-radius: 10px;
+	display: flex;
+	height: 111px;
+ align-items: center;
+	&__title {
+		color: white;
+		font-size: 24px;
+  font-weight: 500;
+		padding: 16px;
+	}
+}
