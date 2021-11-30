@@ -1,10 +1,14 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "./Error.scss";
 
 export default class Error extends Component {
 	render() {
 		return (
-			<div>
-				<h1>C'est l'erreur !!</h1>
+			<div className="error">
+				<h1 className="error__title">404</h1>
+				<p className="error__description">Oups! La page que vous demandez n'existe pas.</p>
+				<Link className="error__btn" to="/">Retourner sur la page d'accueil</Link>
 			</div>
 		);
 	}
