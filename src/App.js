@@ -1,5 +1,4 @@
 import "./App.css";
-import { data } from "./data/data";
 import { Routes, Route } from "react-router-dom";
 import About from "./Containers/About/About";
 import Error from "./Containers/Errors/Error";
@@ -10,7 +9,7 @@ import Navbar from "./Components/Navbar/Navbar";
 
 export default class App extends Component {
 	render() {
-		console.log(data);
+
 		return (
 			<>
 			<Navbar></Navbar>
