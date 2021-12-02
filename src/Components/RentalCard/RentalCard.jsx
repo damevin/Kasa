@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./RentalCard.scss";
+import Collapse from "../Collapse/Collapse";
 
 export default class RentalCard extends Component {
 	render() {
