@@ -1,0 +1,55 @@
+@import "../../style/css-variables.scss";
+
+.collapse {
+	border: 1px solid $secondary;
+	width: 100%;
+	&__visible {
+		align-items: center;
+		background: $primary;
+		border-radius: 5px;
+		color: white;
+		cursor: pointer;
+		display: flex;
+		height: 47px;
+		font-size: 20px;
+		justify-content: space-between;
+		padding: 6px 18px;
+		&__title {
+			font-size: 24px;
+			font-weight: 500;
+			margin: 0;
+			padding: 0;
+		}
+		&__chevron {
+			transition: all 0.4s ease-in-out;
+			width: 20px;
+		}
+	}
+
+	&__toggle {
+		background: $secondary;
+		color: $primary;
+  height: auto;
+		font-size: 18px;
+		font-weight: 300;
+		opacity: 0;
+		transition:  opacity 200ms ease-in;
+		&__content {
+			margin: 0;
+			padding: 27px 18px;
+			pointer-events: none;
+   line-height: 25.67px;
+		}
+	}
+
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+.animated {
+	opacity: 1;
+	transition: height 500ms ease-in, opacity 300ms ease-in;
+}
+
