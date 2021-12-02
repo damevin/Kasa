@@ -14,7 +14,6 @@ export default class Collapse extends Component {
 		});
 	}
 
-
 	collapseContent() {
 		const content = this.props.content;
 
@@ -42,7 +41,7 @@ export default class Collapse extends Component {
 						this.toggleCollapse();
 					}}
 				>
-					<h2 class="collapse__visible__title">{this.props.title}</h2>
+					<h2 className="collapse__visible__title">{this.props.title}</h2>
 					<img
 						src={Chevron}
 						alt="chevron down"
@@ -56,7 +55,7 @@ export default class Collapse extends Component {
 					className={this.state.isOpenned ? "collapse__toggle animated" : "collapse__toggle"}
 					style={{ height: this.state.isOpenned ? `auto` : "0px" }}
 				>
-					<p className="collapse__toggle__content">{this.collapseContent()}</p>
+					<div className="collapse__toggle__content">{this.collapseContent()}</div>
 				</div>
 			</div>
 		);
