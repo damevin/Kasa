@@ -1,8 +1,7 @@
 import "./Navbar.scss";
-import { ReactComponent as Logo } from "./NavbarLogo.svg";
 import { NavLink } from "react-router-dom";
-
-import React, { Component } from "react";
+import { ReactComponent as Logo } from "./NavbarLogo.svg";
+import{ Component } from "react";
 
 export default class Navbar extends Component {
 	render() {

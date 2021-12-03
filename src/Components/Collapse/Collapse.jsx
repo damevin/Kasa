@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Chevron from "./chevron.svg";
 import "./Collapse.scss";
 

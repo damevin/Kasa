@@ -1,5 +1,5 @@
-import React, { Component } from "react";
 import "./Herobanner.scss";
+import { Component } from "react";
 
 export default class Herobanner extends Component {
 	render() {
@@ -10,10 +10,7 @@ export default class Herobanner extends Component {
 				</div>
 			);
 		} else if (this.props.origin === "about") {
-			return (
-				<div className="herobanner__about">
-				</div>
-			)
-		} 
+			return <div className="herobanner__about"></div>;
+		}
 	}
 }

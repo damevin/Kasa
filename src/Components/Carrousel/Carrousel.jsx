@@ -1,14 +1,13 @@
-import React, { Component } from "react";
 import "./Carrousel.scss";
-import { ReactComponent as ChevronRight } from "./chevron-right.svg";
+import { Component } from "react";
 import { ReactComponent as ChevronLeft } from "./chevron-left.svg";
+import { ReactComponent as ChevronRight } from "./chevron-right.svg";
 
 export default class Carrousel extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			currentSlide: 0,
-			paused: false,
 		};
 	}
 

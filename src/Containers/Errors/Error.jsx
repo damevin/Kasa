@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "./Error.scss";
+import { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Error extends Component {
 	render() {

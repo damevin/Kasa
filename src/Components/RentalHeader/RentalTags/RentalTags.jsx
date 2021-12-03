@@ -1,5 +1,5 @@
-import React, { Component } from "react";
 import "./RentalTags.scss";
+import { Component } from "react";
 
 export default class RentalTags extends Component {
  render() {

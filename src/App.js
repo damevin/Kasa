@@ -1,13 +1,13 @@
 import "./App.css";
+import "./Containers/Home/Home.scss";
+import { Component } from "react";
 import { Routes, Route } from "react-router-dom";
 import About from "./Containers/About/About";
 import Error from "./Containers/Errors/Error";
-import Home from "./Containers/Home/Home";
-import "./Containers/Home/Home.scss";
-import { Component } from "react";
-import Rental from "./Containers/Rental/Rental";
-import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
+import Home from "./Containers/Home/Home";
+import Navbar from "./Components/Navbar/Navbar";
+import Rental from "./Containers/Rental/Rental";
 
 export default class App extends Component {
 	render() {

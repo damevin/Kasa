@@ -1,5 +1,5 @@
-import React, { Component } from "react";
 import "./RentalTitle.scss";
+import { Component } from "react";
 
 export default class RentalTitle extends Component {
 	render() {

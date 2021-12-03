@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { ReactComponent as Star } from "./star.svg";
 import "./RentalRatings.scss";
+import { Component } from "react";
+import { ReactComponent as Star } from "./star.svg";
 
 export default class RentalRatings extends Component {
 	render() {
