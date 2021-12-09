@@ -2,6 +2,7 @@ import "./Rental.scss";
 import { Component } from "react";
 import Carrousel from "../../Components/Carrousel/Carrousel";
 import Collapse from "../../Components/Collapse/Collapse.jsx";
+import Error from "../Errors/Error";
 import data from "../../data/data.json";
 import RentalHost from "../../Components/RentalHeader/RentalHost/RentalHost";
 import RentalRatings from "../../Components/RentalHeader/RentalRatings/RentalRatings";
@@ -13,6 +14,7 @@ export default class Rental extends Component {
 		const rentalData = data;
 		const rentalUrlId = window.location.pathname.substr(8);
 		const rental = rentalData.find((item) => item.id === rentalUrlId);
+		if (!rental) return <Error />;
 		return (
 			<div className="rental">
 				<Carrousel pictures={rental.pictures}></Carrousel>
